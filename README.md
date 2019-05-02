@@ -1,2 +1,2 @@
 # project
-machine learning project image hyper spectral classification
+image hyperspectral classification (cloud and non-cloud)
