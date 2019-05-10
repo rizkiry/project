@@ -3,7 +3,7 @@ import argparse
 import fiona
 
 progfiles = os.listdir("C:\\Program Files")
-qgis = "\"C:\\Program Files\\"+[s for s in progfiles if "QGIS" in s][0]+"\\OSGeo4W.bat\""
+qgis = "\"C:\\Program Files\\"+[s for s in progfiles if "QGIS" in s][0]+"\\OSGeo4W.bat\"" # Using OSGeo Shell form QGIS
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--img", help="path of input positive images")
@@ -15,7 +15,7 @@ img = arg.img
 shp = arg.shp
 out = arg.out
 
-fs = fiona.open(shp)
+fs = fiona.open(shp) # open .shp file with fiona
 b=1
 for a in fs:
     print(a)
